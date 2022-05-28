@@ -66,18 +66,63 @@ class AdminAdminController extends Controller
 
                     // dd($alerte->telephone);
                      //notification par message
-                          $sms->message('Bonjour Mr, Mme nous avons besoin d\'un sang de type '.$request->groupe_sanguin.' lieu '.$request->hopital.' niveau d\'urgence '.$request->niveau_urgence)
-                          ->from('+221775530932')
-                          ->to('+221'.$alerte->telephone)
-                          ->send();
+                    //  $sms->message('Bonjour Mr, Mme nous avons besoin d\'un sang de type '.$request->groupe_sanguin.' lieu '.$request->hopital.' niveau d\'urgence '.$request->niveau_urgence)
+                    //  ->from('+221775530932')
+                    //  ->to('+221'.$alerte->telephone)
+                    //  ->send();
                     //notification par email
-                          $mailReception = new AlertesReception($msg);
-                          Mail::to($alerte->email)->send($mailReception);    
+                    //  $mailReception = new AlertesReception($msg);
+                    //  Mail::to($alerte->email)->send($mailReception);    
                  }
                 return redirect('/admin');
         }
         else{
             return view('admin');
         }
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        //
     }
 }

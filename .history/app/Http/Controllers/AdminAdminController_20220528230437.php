@@ -70,7 +70,7 @@ class AdminAdminController extends Controller
                           ->from('+221775530932')
                           ->to('+221'.$alerte->telephone)
                           ->send();
-                    //notification par email
+                        notification par email
                           $mailReception = new AlertesReception($msg);
                           Mail::to($alerte->email)->send($mailReception);    
                  }
@@ -79,5 +79,50 @@ class AdminAdminController extends Controller
         else{
             return view('admin');
         }
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+            
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        //
     }
 }

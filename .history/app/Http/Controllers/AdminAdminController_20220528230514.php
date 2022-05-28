@@ -80,4 +80,5 @@ class AdminAdminController extends Controller
             return view('admin');
         }
     }
+
 }
