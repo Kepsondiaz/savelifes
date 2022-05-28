@@ -43,7 +43,7 @@ class AdminAdminController extends Controller
     public function store(Request $request)
     {
         // dd($request);
-        $client = SMSClient::getInstance('', '');
+        $client = SMSClient::getInstance('VWhV8yku0R4yVWmrNF2LZ1ZYGpn9aue6', 'uVKZ57TLa2e43a9S');
         $sms = new SMS($client);
         
 

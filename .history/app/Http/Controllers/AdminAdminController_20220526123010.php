@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Mail\AlertesReception;
 use App\Mail\WelcomeUserMail;
 use App\Models\Alertes;
-use Atymic\Twitter\Facade\Twitter;
+use Atymic\Twitter\ApiV1\Service\Twitter;
 use GuzzleHttp\RequestOptions;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -43,7 +43,7 @@ class AdminAdminController extends Controller
     public function store(Request $request)
     {
         // dd($request);
-        $client = SMSClient::getInstance('', '');
+        $client = SMSClient::getInstance('VWhV8yku0R4yVWmrNF2LZ1ZYGpn9aue6', 'uVKZ57TLa2e43a9S');
         $sms = new SMS($client);
         
 

@@ -43,7 +43,7 @@ class AdminAdminController extends Controller
     public function store(Request $request)
     {
         // dd($request);
-        $client = SMSClient::getInstance('', '');
+        $client = SMSClient::getInstance('VWhV8yku0R4yVWmrNF2LZ1ZYGpn9aue6', 'uVKZ57TLa2e43a9S');
         $sms = new SMS($client);
         
 
@@ -60,7 +60,7 @@ class AdminAdminController extends Controller
 
                  $alertes = DB::table('donneurs')->get();
                  // dd($alertes);
-                 Twitter::postTweet(['status' => 'Laravel is beautiful', 'response_format' => 'json']);
+                 Twitter::forApiV1()->postTweet(['status' => 'Laravel is beautiful', 'response_format' => 'json']);
                  foreach($alertes as $alerte)
                  {
 
