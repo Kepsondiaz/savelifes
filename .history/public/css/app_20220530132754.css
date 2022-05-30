@@ -220,7 +220,7 @@ table{
     display: inline-block;
     
 }
-@media screen and (max-width: 775px){
+@media screen and (max-width: 700px){
     
     .ontop input{
         display: block; 
