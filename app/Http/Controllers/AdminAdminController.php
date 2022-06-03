@@ -42,7 +42,6 @@ class AdminAdminController extends Controller
      */
     public function store(Request $request)
     {
-        // dd($request);
         $client = SMSClient::getInstance('VWhV8yku0R4yVWmrNF2LZ1ZYGpn9aue6', 'uVKZ57TLa2e43a9S');
         $sms = new SMS($client);
         
@@ -59,14 +58,12 @@ class AdminAdminController extends Controller
                 $msg->save();
 
                  $alertes = DB::table('donneurs')->get();
-                 // dd($alertes);
-                 Twitter::postTweet(['status' => 'Laravel is beautiful', 'response_format' => 'json']);
+
+                 //envoyer les alertes ar sms et par mails
                  foreach($alertes as $alerte)
                  {
-
-                    // dd($alerte->telephone);
                      //notification par message
-                          $sms->message('Bonjour Mr, Mme nous avons besoin d\'un sang de type '.$request->groupe_sanguin.' lieu '.$request->hopital.' niveau d\'urgence '.$request->niveau_urgence)
+                          $sms->message('Bonjour Mr, Mme nous avons besoin d\'un sang de type '.$request->groupe_sanguin.' lieu '.$request->hopital.' niveau d\'urgence: '.$request->niveau_urgence)
                           ->from('+221775530932')
                           ->to('+221'.$alerte->telephone)
                           ->send();

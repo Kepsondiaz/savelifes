@@ -42,7 +42,7 @@
                     <span  id="error1"></span><br>
 
                     <label for="telephone">Téléphone</label>
-                    <input type="text" id="telephone" name="telephone" placeholder="+221 numéro tél" class="largeur" required>
+                    <input type="text" id="telephone" name="telephone" placeholder="numéro tél" class="largeur" required>
                     <span  id="error2"></span><br>
 
                     <label for="date_naissance">Date de naissance</label>
@@ -93,7 +93,7 @@
                     <input type="submit" value="VALIDER">
                     @if (session()->has('message'))
                     <div class="alert">
-                        <p class="alert alert-success">{{session()->get('message')}}</p> 
+                        <strong class="alert alert-success">{{session()->get('message')}}</strong> 
                     </div>
                     @endif	
             </form>
