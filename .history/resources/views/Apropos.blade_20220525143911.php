@@ -8,7 +8,7 @@
 </div>
 <div class="ontop">
     
-    <a href="index.php"><input type="button" value="Accueil"></a>
+    <a href="index.php"><input type="button" value="Alertes"></a>
     <a href="devenir_donneur.php"><input type="button" value="Devenir donneur"></a>
     <a href="a_propos.php"><input type="button" value="A propos de Savelife"></a>
     <a href="contact"><input type="button" value="Contact"></a><br>

@@ -182,7 +182,7 @@
     </div>
     <div class="ontop">
         
-        <a href="index.php"><input type="button" value="Accueil"></a>
+        <a href="index.php"><input type="button" value="Alertes"></a>
         <a href="devenir_donneur.php"><input type="button" value="Devenir donneur"></a>
         <a href="#"><input type="button" value="A propos de nous"></a>
         <a href="contact.php"><input type="button" value="Contact"></a><br>
