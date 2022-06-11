@@ -45,6 +45,4 @@ Route::resource('post', AdminAdminController::class);
  Route::post('contact', [DevenirDonneur::class, 'contact'])->name('contact');
 
 
- Route::fallback(function() {
-    return view('404'); // la vue 404.blade.php
- });
+ 

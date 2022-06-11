@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Mail\WelcomeUserMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 
 class PostController extends Controller
@@ -17,12 +16,13 @@ class PostController extends Controller
 
     public  function store(Request $request)
     {
-        dd(Hash::make($request->email));
+        hash();
+        //  dd($request);
         DB::table('donneurs')->insert([
             'nom' => $request->nom,
             'prenom' => $request->prenom,
             'telephone' => $request->telephone,
-            'email' => Hash::make($request->email),
+            'email' => $request->email,
             'ddn' => $request->date_naissance,
             'adresse' => $request->adresse,
             'profession' => $request->profession,

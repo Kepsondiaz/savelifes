@@ -17,12 +17,12 @@ class PostController extends Controller
 
     public  function store(Request $request)
     {
-        dd(Hash::make($request->email));
+        //  dd($request);
         DB::table('donneurs')->insert([
             'nom' => $request->nom,
             'prenom' => $request->prenom,
             'telephone' => $request->telephone,
-            'email' => Hash::make($request->email),
+            'email' => Hash::make($request->email)
             'ddn' => $request->date_naissance,
             'adresse' => $request->adresse,
             'profession' => $request->profession,

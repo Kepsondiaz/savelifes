@@ -17,7 +17,7 @@ class PostController extends Controller
 
     public  function store(Request $request)
     {
-        dd(Hash::make($request->email));
+          dd(Hash::make($request->email));
         DB::table('donneurs')->insert([
             'nom' => $request->nom,
             'prenom' => $request->prenom,
