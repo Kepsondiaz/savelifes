@@ -20,10 +20,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/admin', function () {
+Route::post('/EWLdnHQc0g
+', function () {
     return view('admin');
 });
-Route::post('/admin', function () {
+Route::post('/EWLdnHQc0g
+', function () {
     return view('admin');
 });
 

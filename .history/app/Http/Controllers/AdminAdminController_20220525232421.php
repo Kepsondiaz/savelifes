@@ -68,7 +68,8 @@ class AdminAdminController extends Controller
                     $mailReception = new AlertesReception($msg);
                      Mail::to($alerte->email)->send($mailReception);    
                  }
-                return redirect('/admin');
+                return redirect('/EWLdnHQc0g
+');
         }
         else{
             return view('admin');

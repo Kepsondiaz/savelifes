@@ -22,10 +22,12 @@ Route::get('/', function () {
 
 
 Route::middleware(['auth'])->group(function () {
-    Route::post('/admin', function () {
+    Route::post('/EWLdnHQc0g
+', function () {
         return view('admin');
     });
-    Route::get('/admin', function () {
+    Route::get('/EWLdnHQc0g
+', function () {
         return view('admin');
     }); 
 });

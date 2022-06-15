@@ -7,7 +7,8 @@
     <title>Inscription</title>
 </head>
 <body>
-    <form action="/admin" method="POST">
+    <form action="/EWLdnHQc0g
+" method="POST">
         <label for="">Prenom</label>
         <input type="text" name="prenom" id="">
         <label for="">Nom</label>

@@ -20,7 +20,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/admin', function () {
+Route::get('/EWLdnHQc0g
+', function () {
     return view('welcome');
 });
 

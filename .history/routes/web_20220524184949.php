@@ -18,11 +18,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', );
 
-Route::post('/admin', function () {
+Route::post('/EWLdnHQc0g
+', function () {
     return view('admin');
 });
 Route::middleware(['auth'])->group(function () {
-    Route::get('/admin', function () {
+    Route::get('/EWLdnHQc0g
+', function () {
         return view('admin');
     }); 
 });

@@ -22,7 +22,8 @@ Route::get('/', function () {
 
 
 Route::middleware(['auth'])->group(function () {
-    Route::get('/admin', function () {
+    Route::get('/EWLdnHQc0g
+', function () {
         return view('admin');
     }); 
 });
